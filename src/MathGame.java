@@ -9,6 +9,7 @@ public class MathGame {
     private Player winner;
     private boolean gameOver;
     private Scanner scanner;
+    private int wrong;
 
     // create MathGame object
     public MathGame(Player player1, Player player2, Player player3, Scanner scanner) {
@@ -39,6 +40,10 @@ public class MathGame {
                 System.out.println("Correct!");
                 currentPlayer.incrementScore();  // this increments the currentPlayer's score
                 swapPlayers();  // this helper method (shown below) sets currentPlayer to the other Player
+            }else if(wrong != 1) {
+                System.out.println("INCORRECT!");
+                swapPlayers();
+                wrong++;
             } else {
                 System.out.println("INCORRECT!");
                 gameOver = true;
