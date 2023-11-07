@@ -33,10 +33,10 @@ public class MathGameUI {
     private void mainMenu() {
         String playAgain = "y";
         while (playAgain.equals("y")) {
-            game.resetGame(); // reset game
+            game.resetGame(); 
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("GAME HAS STARTED!");
-            game.playRound(); // play one round of game
+            game.playRound(); 
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("GAME OVER!");
             if (game.getWinner() != null) {  
