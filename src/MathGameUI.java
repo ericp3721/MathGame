@@ -6,7 +6,7 @@ public class MathGameUI {
     private Scanner scan;
 
     public MathGameUI() {
-        game = null; // initialized in setup()
+        game = null; 
         scan = new Scanner(System.in);
         setup();
         mainMenu();
