@@ -22,7 +22,6 @@ public class MathGameUI {
         System.out.print("Enter player 3's name: ");
         String p3Name = scan.nextLine();
 
-        // initialize Player objects and MathGame object
         Player p1 = new Player(p1Name);
         Player p2 = new Player(p2Name);
         Player p3 = new Player(p3Name);
