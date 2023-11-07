@@ -12,7 +12,6 @@ public class MathGameUI {
         mainMenu();
     }
 
-    // ------------ PRIVATE HELPER METHODS (internal use only) ------------
     private void setup() {
         // get player names
         System.out.println("Welcome to the Math Game!");
@@ -40,9 +39,9 @@ public class MathGameUI {
             game.playRound(); // play one round of game
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("GAME OVER!");
-            if (game.getWinner() != null) {  // check for null just to be safe (so we don't call a method on null)
-                System.out.println("The winner was " + game.getWinner().getName());   // print winner's name
-                System.out.println("with a score of " + game.getWinner().getScore()); // print winner's score
+            if (game.getWinner() != null) {  
+                System.out.println("The winner was " + game.getWinner().getName());  
+                System.out.println("with a score of " + game.getWinner().getScore()); 
                 System.out.println(game.getWinner().getName() + " has won " + game.getWinner().getWinningSteak() + " in a row!");
             }
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
